@@ -1,0 +1,215 @@
+@import '../global/variables';
+
+
+
+.news-article {
+      width: 375px;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+
+
+
+      &-image {
+            width: 375px;
+            height: 284px;
+      }
+
+      &-description {
+            padding: 40px 24px;
+            color: $dark-slate-grey;
+
+            h3{
+                  font-size: 40px;
+                  font-weight: 700;
+                  margin-bottom: 24px;
+                  
+            }
+
+            p {
+                  font-size: 16px;
+                  font-weight: 400;
+            }
+
+            .updates-list{
+                  margin-top: 24px;
+                  margin-bottom: 41px;
+
+                  &-item {
+                        display: flex;
+                        align-items: start;
+                        gap: 0px 16px; 
+                        margin-bottom: 10px;
+                  }
+            }
+
+
+            form {
+                  display: flex;
+                  flex-direction: column;
+
+
+                  div {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 24px;
+
+
+                        label{
+                            color: $dark-slate-grey;
+                            font-size: 12px;
+                            font-weight: 700;
+                            margin-bottom: 8px;
+                        }
+
+                        input {
+                            padding: 16px 24px;
+                            border-radius: 8px;
+                            border: 1px solid $grey;
+                            font-size: 16px;
+                            height: 56px;  
+                        }
+                  }
+
+                  button {
+                       text-align: center;
+                       background-color: $dark-slate-grey;
+                       color: $white;
+                       padding: 14px 45px;
+                       border-radius: 8px;
+                       border: 0px;
+                       font-weight: 700;
+                       height: 56px;
+                       letter-spacing: 0.091rem;  
+
+                  }
+            }
+      }
+
+
+
+
+
+
+
+      .attribution {
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+
+      .news-article {
+            width: 928px;
+            height: 641px;
+            background-color: $white;
+            border-radius: 36px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            padding: 24px;
+
+
+      
+      
+      
+            &-image {
+               width: 400px;
+               height: 593px;   
+            }
+      
+            &-description {
+                  padding: 72px 40px;
+      
+                  h3{
+                        font-size: 40px;
+                        font-weight: 700;
+                        margin-bottom: 24px;
+                  }
+      
+                  p {
+                        font-size: 16px;
+                        font-weight: 400;
+                  }
+      
+                  .updates-list{
+                        margin-top: 24px;
+                        margin-bottom: 41px;
+      
+                        &-item {
+                              display: flex;
+                              align-items: start;
+                              gap: 0px 16px; 
+                              margin-bottom: 10px;
+                        }
+                  }
+      
+      
+                  form {
+                        display: flex;
+                        flex-direction: column;
+      
+      
+                        div {
+                              display: flex;
+                              flex-direction: column;
+                              margin-bottom: 24px;
+      
+      
+                              label{
+                                  color: $dark-slate-grey;
+                                  font-size: 12px;
+                                  font-weight: 700;
+                                  margin-bottom: 8px;
+                              }
+      
+                              input {
+                                  padding: 16px 24px;
+                                  border-radius: 8px;
+                                  border: 1px solid $grey;
+                                  font-size: 16px;
+                                  height: 56px;  
+                              }
+                        }
+      
+                        button {
+                             text-align: center;
+                             background-color: $dark-slate-grey;
+                             color: $white;
+                             padding: 14px 45px;
+                             border-radius: 8px;
+                             border: 0px;
+                             font-weight: 700;
+                             height: 56px; 
+      
+                        }
+                  }
+            }
+      
+      
+      
+      
+      
+      
+      
+            .attribution {
+                  display: flex;
+                  justify-content: center;
+                  font-size: 10px;
+                  margin-top: 10px;
+            }
+      }
+      
+}

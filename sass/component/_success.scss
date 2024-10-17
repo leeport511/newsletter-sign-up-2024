@@ -1,0 +1,131 @@
+@import '../global/variables';
+@import '../global/globals';
+
+
+
+.success-main {
+      background-color: $white;
+      width: 382px;
+      height: 100vh;
+      padding: 40px 24px;
+      color: $dark-slate-grey;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+
+
+      &-text {
+
+            img {
+                  width: 64px;
+                  margin-top: 109px;
+            }
+
+            h3 {
+                font-size: 40px;
+                font-weight: 700;
+                margin-top: 40px;  
+            }
+
+            p {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 1.4rem;
+                  margin-top: 24px;
+            }
+      }
+
+      &-btn {
+            width: 100%;
+
+
+            button {
+                  width: 100%;
+                  text-align: center;
+                  background-color: $dark-slate-grey;
+                  color: $white;
+                  padding: 14px 45px;
+                  border-radius: 8px;
+                  border: 0px;
+                  font-weight: 700;
+                  height: 56px;
+                  letter-spacing: 0.091rem;
+                  cursor: pointer;
+                  
+                  &:hover {
+                        background-color: $tomato;
+                        color: $white;
+                        box-shadow: 0 5px 40px  $tomato ;
+                  }
+            }
+
+            
+      }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+
+      .success-main {
+            background-color: $white;
+            width: 504px;
+            height: 520px;
+            border-radius: 36px;
+            padding: 64px;
+            color: $dark-slate-grey;
+            display: flex;
+            flex-direction: column;
+
+
+      
+      
+            &-text {
+      
+                  img {
+                        width: 64px;
+                        margin-top: 0px;
+                  }
+      
+                  h3 {
+                      font-size: 40px;
+                      font-weight: 700;
+                  }
+      
+                  p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 1.4rem;
+                  }
+            }
+      
+            &-btn {
+                  width: 100%;
+      
+      
+                  button {
+                        width: 100%;
+                        text-align: center;
+                        background-color: $dark-slate-grey;
+                        color: $white;
+                        padding: 14px 45px;
+                        border-radius: 8px;
+                        border: 0px;
+                        font-weight: 700;
+                        height: 56px;
+                        letter-spacing: 0.091rem; 
+                  }
+            }
+      }
+      
+      
+      
+}

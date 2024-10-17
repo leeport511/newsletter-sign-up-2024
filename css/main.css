@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(235, 18%, 26%);
+}
+
+.news-article {
+  width: 375px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+}
+.news-article-image {
+  width: 375px;
+  height: 284px;
+}
+.news-article-description {
+  padding: 40px 24px;
+  color: hsl(234, 29%, 20%);
+}
+.news-article-description h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.news-article-description p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.news-article-description .updates-list {
+  margin-top: 24px;
+  margin-bottom: 41px;
+}
+.news-article-description .updates-list-item {
+  display: flex;
+  align-items: start;
+  gap: 0px 16px;
+  margin-bottom: 10px;
+}
+.news-article-description form {
+  display: flex;
+  flex-direction: column;
+}
+.news-article-description form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.news-article-description form div label {
+  color: hsl(234, 29%, 20%);
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.news-article-description form div input {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid hsl(231, 7%, 60%);
+  font-size: 16px;
+  height: 56px;
+}
+.news-article-description form button {
+  text-align: center;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  padding: 14px 45px;
+  border-radius: 8px;
+  border: 0px;
+  font-weight: 700;
+  height: 56px;
+  letter-spacing: 0.091rem;
+}
+.news-article .attribution {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 1280px) {
+  .news-article {
+    width: 928px;
+    height: 641px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 36px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 24px;
+  }
+  .news-article-image {
+    width: 400px;
+    height: 593px;
+  }
+  .news-article-description {
+    padding: 72px 40px;
+  }
+  .news-article-description h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .news-article-description p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .news-article-description .updates-list {
+    margin-top: 24px;
+    margin-bottom: 41px;
+  }
+  .news-article-description .updates-list-item {
+    display: flex;
+    align-items: start;
+    gap: 0px 16px;
+    margin-bottom: 10px;
+  }
+  .news-article-description form {
+    display: flex;
+    flex-direction: column;
+  }
+  .news-article-description form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .news-article-description form div label {
+    color: hsl(234, 29%, 20%);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .news-article-description form div input {
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid hsl(231, 7%, 60%);
+    font-size: 16px;
+    height: 56px;
+  }
+  .news-article-description form button {
+    text-align: center;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 14px 45px;
+    border-radius: 8px;
+    border: 0px;
+    font-weight: 700;
+    height: 56px;
+  }
+  .news-article .attribution {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(235, 18%, 26%);
+}
+
+.success-main {
+  background-color: hsl(0, 0%, 100%);
+  width: 382px;
+  height: 100vh;
+  padding: 40px 24px;
+  color: hsl(234, 29%, 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.success-main-text img {
+  width: 64px;
+  margin-top: 109px;
+}
+.success-main-text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+.success-main-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4rem;
+  margin-top: 24px;
+}
+.success-main-btn {
+  width: 100%;
+}
+.success-main-btn button {
+  width: 100%;
+  text-align: center;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  padding: 14px 45px;
+  border-radius: 8px;
+  border: 0px;
+  font-weight: 700;
+  height: 56px;
+  letter-spacing: 0.091rem;
+  cursor: pointer;
+}
+.success-main-btn button:hover {
+  background-color: hsl(4, 100%, 67%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 5px 40px hsl(4, 100%, 67%);
+}
+
+@media screen and (min-width: 1280px) {
+  .success-main {
+    background-color: hsl(0, 0%, 100%);
+    width: 504px;
+    height: 520px;
+    border-radius: 36px;
+    padding: 64px;
+    color: hsl(234, 29%, 20%);
+    display: flex;
+    flex-direction: column;
+  }
+  .success-main-text img {
+    width: 64px;
+    margin-top: 0px;
+  }
+  .success-main-text h3 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .success-main-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+  .success-main-btn {
+    width: 100%;
+  }
+  .success-main-btn button {
+    width: 100%;
+    text-align: center;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 14px 45px;
+    border-radius: 8px;
+    border: 0px;
+    font-weight: 700;
+    height: 56px;
+    letter-spacing: 0.091rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
