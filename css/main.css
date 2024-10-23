@@ -16,6 +16,14 @@ body {
   background-color: hsl(235, 18%, 26%);
 }
 
+#email-error {
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  color: hsl(4, 100%, 67%);
+  font-weight: 700;
+}
+
 .news-article {
   width: 375px;
   background-color: hsl(0, 0%, 100%);
@@ -57,6 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
+  position: relative;
 }
 .news-article-description form div label {
   color: hsl(234, 29%, 20%);
@@ -70,6 +79,7 @@ body {
   border: 1px solid hsl(231, 7%, 60%);
   font-size: 16px;
   height: 56px;
+  cursor: pointer;
 }
 .news-article-description form button {
   text-align: center;
@@ -81,6 +91,12 @@ body {
   font-weight: 700;
   height: 56px;
   letter-spacing: 0.091rem;
+  cursor: pointer;
+}
+.news-article-description form button:hover {
+  background-color: hsl(4, 100%, 67%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 5px 40px hsl(4, 100%, 67%);
 }
 .news-article .attribution {
   display: flex;
