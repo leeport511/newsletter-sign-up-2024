@@ -24,6 +24,15 @@ body {
   font-weight: 700;
 }
 
+.error-state {
+  border: 1px solid hsl(4, 100%, 67%);
+  background-color: rgba(255, 97, 85, 0.1568627451);
+  color: hsl(4, 100%, 67%);
+}
+.error-state::placeholder {
+  color: hsl(4, 100%, 67%);
+}
+
 .news-article {
   width: 375px;
   background-color: hsl(0, 0%, 100%);
@@ -73,7 +82,7 @@ body {
   font-weight: 700;
   margin-bottom: 8px;
 }
-.news-article-description form div input {
+.news-article-description form div .email-input {
   padding: 16px 24px;
   border-radius: 8px;
   border: 1px solid hsl(231, 7%, 60%);

@@ -1,8 +1,7 @@
 import { emailSchema } from "./validations.js";
 
-
-
-
+const errorMessage = document.getElementById('email-error');
+const emailInput = document.getElementById('email');
 
 
 const handleSubmit = async (e) => {
@@ -14,9 +13,17 @@ const handleSubmit = async (e) => {
       
       try {
             await emailSchema.validate( data , { abortEarly: false });
+            emailInput.classList.remove("error-state")
             console.log('Success Validation', data);
+
+            window.location.href = '/pages/successPage.html'
             
       } catch (errors) {
+            
+            if (errors) {
+                  errorMessage.innerText = errors.message
+                  emailInput.classList.toggle("error-state")
+            }
             
             console.log('Validations Errors', errors.inner);
             
