@@ -1,10 +1,11 @@
+
 import { emailSchema } from "./validations.js";
 
 const errorMessage = document.getElementById('email-error');
 const emailInput = document.getElementById('email');
 
 
-const handleSubmit = async (e) => {
+export const handleSubmit = async (e) => {
       e.preventDefault();
       
       
@@ -14,8 +15,9 @@ const handleSubmit = async (e) => {
       try {
             await emailSchema.validate( data , { abortEarly: false });
             emailInput.classList.remove("error-state")
-            console.log('Success Validation', data);
-
+            console.log(data.email);
+            localStorage.setItem('email', data.email)
+            
             window.location.href = '/pages/successPage.html'
             
       } catch (errors) {
@@ -25,10 +27,11 @@ const handleSubmit = async (e) => {
                   emailInput.classList.toggle("error-state")
             }
             
-            console.log('Validations Errors', errors.inner);
+           
             
       }
       
+
 }
 
 
